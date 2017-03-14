@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="add_contact">Add Contact</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nhd.app1.MainActivity">
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/number" />
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo_male"
+            android:text="@string/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/rdo_female"
+            android:text="@string/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_add_contact"
+        android:padding="@dimen/padding_8dp"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/lst_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
